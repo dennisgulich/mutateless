@@ -1,0 +1,37 @@
+{
+  "name": "mutateless",
+  "version": "1.0.0",
+  "description": "Keep your sanity while working with immutable data structures",
+  "main": "./dist/index.js",
+  "author": "Dennis Gülich",
+  "license": "MIT",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "babel src/**/* --out-dir lib",
+    "test": "eslint && jest --coverage",
+    "eslint": "eslint src/**/*.js"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-preset-latest": "^6.22.0",
+    "eslint": "^3.14.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "jest": "^18.1.0"
+  },
+  "dependencies": {
+    "lodash.curry": "^4.1.1"
+  }
+}

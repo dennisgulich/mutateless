@@ -1,0 +1,18 @@
+export { add } from './add'
+export { addAt } from './addAt'
+export { assign } from './assign'
+export { remove } from './remove'
+export { replace } from './replace'
+export { sort } from './sort'
+export { sortWith } from './sort-with'
+
+// predicates
+export { all } from './predicates/all'
+export { any } from './predicates/any'
+export { first } from './predicates/first'
+export { index } from './predicates/index'
+export { last } from './predicates/last'
+export { match } from './predicates/match'
+export { not } from './predicates/not'
+export { range } from './predicates/range'
+export { ref } from './predicates/ref'
