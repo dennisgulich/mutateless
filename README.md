@@ -38,7 +38,7 @@ Lets combine `assign` and the curried `add`:
 ```javascript
 assign({notes: add('another note')}, todo) // => new object with with a second note
 ```
-Which is the equivalent as writing:
+Which is equivalent to:
 ```javascript
 assign({notes: notes => add('another note', notes)}, todo) // => new object with with a second note
 ```
@@ -57,7 +57,9 @@ const article = {
   }
 }
 
-assign({author: assign({username: 'kiefer.sutherland'})}, article) // => new article with updated author.username
+const setUsername = username => assign({username}) // => curried assign which accepts an object/list
+
+assign({author: setUsername('kiefer.sutherland')}, article) // => new article with updated author.username
 ```
 
 `mutateless` contains a some generic and useful predicates to help you write more readable and predictable code. 

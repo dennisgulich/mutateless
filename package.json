@@ -2,12 +2,18 @@
   "name": "mutateless",
   "version": "1.0.0",
   "description": "Keep your sanity while working with immutable data structures",
-  "main": "./dist/index.js",
+  "main": "./lib/index.js",
   "author": "Dennis Gülich",
   "license": "MIT",
+  "homepage": "https://github.com/dennisgulich/mutateless",
+  "bugs": "https://github.com/dennisgulich/mutateless/issues",
+  "repository": {
+    "url": "https://github.com/dennisgulich/mutateless",
+    "type": "git"
+  },
   "scripts": {
     "prepublish": "npm run build",
-    "build": "babel src/**/* --out-dir lib",
+    "build": "babel src --out-dir lib",
     "test": "eslint && jest --coverage",
     "eslint": "eslint src/**/*.js"
   },
