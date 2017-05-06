@@ -12,7 +12,7 @@
     "type": "git"
   },
   "scripts": {
-    "prepublish": "npm run build",
+    "prepublishOnly": "npm test && npm run build",
     "build": "babel src --out-dir lib",
     "test": "eslint && jest --coverage",
     "eslint": "eslint src/**/*.js"
