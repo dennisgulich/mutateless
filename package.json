@@ -1,6 +1,6 @@
 {
   "name": "mutateless",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Keep your sanity while working with immutable data structures",
   "main": "./lib/index.js",
   "author": "Dennis Gülich",
